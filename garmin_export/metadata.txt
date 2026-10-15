@@ -1,0 +1,15 @@
+[general]
+name=Garmin Export
+qgisMinimumVersion=3.16
+description=Export vector layers to Garmin GPS units (IMG map via mkgmap, or GPX)
+version=0.1.0
+author=Joakim
+email=jockesv@gmail.com
+about=Exports vector layers to a Garmin map (gmapsupp.img) for non-Android Garmin handhelds (eTrex, GPSMAP, Oregon, Montana, Dakota, ...). Writes Polish Format (.mp) tiles and compiles them with mkgmap, or exports points/lines to GPX. Based on the workflow in the GPSFileDepot "How to create Garmin topo maps" tutorial. Requires Java and mkgmap.jar for IMG output.
+tracker=
+repository=
+tags=garmin,gps,export,gpx,mkgmap,img,polish,mp
+category=Vector
+icon=icon.svg
+experimental=True
+supportsQt6=True
