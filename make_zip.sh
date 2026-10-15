@@ -9,5 +9,5 @@ version=$(sed -n 's/^version=//p' "$plugin/metadata.txt")
 mkdir -p dist
 out="dist/${plugin}-${version}.zip"
 rm -f "$out"
-git archive --format=zip --prefix="${plugin}/" -o "$out" "HEAD:${plugin}"
+git archive --format=zip --prefix="${plugin}/" -o "$out" "HEAD:${plugin}" ":(exclude)tests"
 echo "$out"
